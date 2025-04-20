@@ -3,34 +3,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Síguenos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: #ffffff;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
+        }
+        img.logo {
+            max-width: 300px;
+            margin-bottom: 30px;
         }
         h1 {
-            color: #333;
+            color: #222;
+            margin-bottom: 30px;
         }
-        a {
-            display: block;
-            margin: 15px 0;
-            font-size: 20px;
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 10px auto;
+            padding: 12px 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 350px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
             text-decoration: none;
-            color: #0077cc;
+            transition: transform 0.2s ease;
         }
+        .social-button:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+        .facebook { background-color: #1877f2; }
+        .instagram { background-color: #e1306c; }
+        .whatsapp { background-color: #25d366; }
+        .youtube { background-color: #ff0000; }
+        .tiktok { background-color: #010101; }
+        .spotify { background-color: #1db954; }
     </style>
 </head>
 <body>
+
+    <img src="logo.jpeg" alt="Logo" class="logo">
     <h1>Síguenos</h1>
-    <a href="https://www.instagram.com" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
-    <a href="https://wa.me" target="_blank">WhatsApp</a>
-    <a href="https://www.youtube.com" target="_blank">YouTube</a>
-    <a href="https://www.spotify.com" target="_blank">Spotify</a>
-    <a href="https://www.facebook.com/share/1EPnbNLKGY/?mibextid=wwXIfr" target="_blank">Facebook</a>
+
+    <a href="https://www.facebook.com/share/1EPnbNLKGY/?mibextid=wwXIfr" class="social-button facebook" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"> Facebook
+    </a>
+
+    <a href="https://www.instagram.com" class="social-button instagram" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+    </a>
+
+    <a href="https://wa.me" class="social-button whatsapp" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> WhatsApp
+    </a>
+
+    <a href="https://www.youtube.com" class="social-button youtube" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube
+    </a>
+
+    <a href="https://www.tiktok.com" class="social-button tiktok" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"> TikTok
+    </a>
+
+    <a href="https://www.spotify.com" class="social-button spotify" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify"> Spotify
+    </a>
+
 </body>
 </html>
